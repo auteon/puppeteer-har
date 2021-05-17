@@ -30,21 +30,15 @@ export const captureResponses = (
 
     const resolve = createResolvable()
 
-    if (response.mimeType === "text/html") {
-      client.on("Network.loadingFinished", async (params) => {
-        if (params.requestId !== requestId) {
-          return
-        }
+    client.on("Network.loadingFinished", async (params) => {
+      if (params.requestId !== requestId) {
+        return
+      }
 
-        resolve({
-          [requestId]: await extractResponseContent(client, requestId),
-        })
-      })
-    } else {
       resolve({
         [requestId]: await extractResponseContent(client, requestId),
       })
-    }
+    })
   }
 
   client.on("Network.responseReceived", callback)
@@ -99,7 +93,6 @@ const extractResponseContent = async (
       responseBody.base64Encoded ? "base64" : undefined
     ).toString()
   } catch (e) {
-    console.log(e)
     // Resources (i.e. response bodies) are flushed after page commits
     // navigation and we are no longer able to retrieve them. In this
     // case, fail soft so we still add the rest of the response to the
