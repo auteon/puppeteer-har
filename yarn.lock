@@ -1698,10 +1698,10 @@ chownr@^2.0.0:
   resolved "https://registry.yarnpkg.com/chownr/-/chownr-2.0.0.tgz#15bfbe53d2eab4cf70f18a8cd68ebe5b3cb1dece"
   integrity sha512-bIomtDF5KGpdogkLd9VspvFzk9KfpyyGlS8YFVZl7TGPBHL5snIOnxeshwVgPteQ9b4Eydl+pVbIyE1DcvCWgQ==
 
-chrome-har@^0.11.3:
-  version "0.11.12"
-  resolved "https://registry.yarnpkg.com/chrome-har/-/chrome-har-0.11.12.tgz#29a75a0d9ebb70c9c40d8fbd35c3db7d4f010e25"
-  integrity sha512-Fi/YCoUHjQMQC0sPKCdiuGVbApeEwIUNvISrlwZgbuUcxfHJA6MjD4RsIH/YSOAo/Z3ENiF+xaEpsdqqdETIjg==
+chrome-har@^0.13.0:
+  version "0.13.0"
+  resolved "https://registry.yarnpkg.com/chrome-har/-/chrome-har-0.13.0.tgz#aa2bd753a168f0543357256df15196307edb6029"
+  integrity sha512-wknoUfURyGp+sGvikTrOGpsL+bhzinqciItSGXwklIc9logrfrwZb6Ca/ZTho4twDKsy0f4dAVL79jHyvOG4Qw==
   dependencies:
     dayjs "1.8.31"
     debug "4.1.1"
