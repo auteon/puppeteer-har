@@ -8,7 +8,6 @@
     "prebuild": "yarn clean",
     "build": "tsc --build",
     "prepublishOnly": "yarn build && pinst --disable",
-    "postinstall": "husky install",
     "postpublish": "pinst --enable",
     "release": "semantic-release",
     "test": "jest"
