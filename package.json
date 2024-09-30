@@ -36,7 +36,7 @@
   "devDependencies": {
     "@commitlint/cli": "12.1.4",
     "@commitlint/config-conventional": "12.1.4",
-    "@types/har-format": "1.2.5",
+    "@types/har-format": "1.2.16",
     "@types/jest": "26.0.23",
     "@types/node": "14.14.45",
     "husky": "6.0.0",
