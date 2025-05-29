@@ -5,7 +5,7 @@ Generate HAR file with [puppeteer](https://github.com/GoogleChrome/puppeteer).
 ## Install
 
 ```
-yarn add @auteon/puppeteer-har
+npm i @the-markup/puppeteer-har
 ```
 
 ## Usage
